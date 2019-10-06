@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutContainer = () => (
+const About = () => (
   <div className="about-container">
     <h2>About Page</h2>
     <p>This is a sample counter app</p>
@@ -11,4 +11,4 @@ const AboutContainer = () => (
   </div>
 );
 
-export default AboutContainer;
+export default About;

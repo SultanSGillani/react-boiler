@@ -4,14 +4,15 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styled from 'styled-components';
 
-import { Button, Input } from '../../components';
+import { Button } from '../../components/Button';
+import Input from '../../components/Input';
 import { actions as counterActions } from '../../reducers/counter';
 
 const Container = styled.div`
   display: inherit;
 `;
 
-const CounterContainer = (props) => {
+const Counter = (props) => {
   const [val, setVal] = useState(0);
 
   const customValChange = (e) => {
@@ -40,7 +41,7 @@ const CounterContainer = (props) => {
   );
 };
 
-CounterContainer.propTypes = {
+Counter.propTypes = {
   total: PropTypes.number.isRequired,
   counterIncrease: PropTypes.func.isRequired,
   counterDecrease: PropTypes.func.isRequired,
@@ -63,4 +64,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(CounterContainer);
+)(Counter);

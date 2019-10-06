@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LoadingComponent = (props) => {
+const Loading = (props) => {
   const { isLoading, error, timedOut } = props;
   if (isLoading) {
     return (
@@ -26,14 +26,14 @@ const LoadingComponent = (props) => {
   return null;
 };
 
-LoadingComponent.propTypes = {
+Loading.propTypes = {
   isLoading: PropTypes.bool.isRequired,
   error: PropTypes.bool,
   timedOut: PropTypes.bool.isRequired,
 };
 
-LoadingComponent.defaultProps = {
+Loading.defaultProps = {
   error: null,
 };
 
-export default LoadingComponent;
+export default Loading;
