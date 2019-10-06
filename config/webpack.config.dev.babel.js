@@ -10,7 +10,6 @@ import sass from 'sass';
 export default {
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json'],
-    // To support react-hot-loader
     alias: {
       'react-dom': '@hot-loader/react-dom',
     },
@@ -24,12 +23,12 @@ export default {
     './src/webpack-public-path',
     'react-hot-loader/patch',
     'webpack-hot-middleware/client?reload=true',
-    path.resolve(__dirname, '../src/index.jsx'), // Defining path seems necessary for this to work consistently on Windows machines.
+    path.resolve(__dirname, '../src/index.js'), // Defining path seems necessary for this to work consistently on Windows machines.
   ],
   target: 'web',
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, 'dist'), // Note: Physical files are only output by the production build task `npm run build`.
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: 'bundle.js',
   },
@@ -38,9 +37,8 @@ export default {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
-      // Create HTML file that includes references to bundled CSS and JS.
       template: 'src/index.ejs',
-      title: "Sultan Gillani's Website",
+      title: 'My Personal React BoilerPlate',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -51,7 +49,7 @@ export default {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -133,7 +131,6 @@ export default {
             },
           },
           {
-            // First we transform SASS to standard CSS
             loader: 'sass-loader',
             options: {
               implementation: sass,

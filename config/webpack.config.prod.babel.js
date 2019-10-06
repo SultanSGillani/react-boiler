@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import path from 'path';
 
 import cssnano from 'cssnano';
@@ -15,33 +16,27 @@ const GLOBALS = {
 export default {
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json'],
-    // To support react-hot-loader
     alias: {
       'react-dom': '@hot-loader/react-dom',
     },
   },
   devtool: 'source-map',
-  entry: path.resolve(__dirname, 'src/index'),
+  entry: path.resolve(__dirname, '../src/index'),
   target: 'web',
   mode: 'production',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
     filename: '[name].[contenthash].js',
   },
   plugins: [
-    // Tells React to build in prod mode. https://facebook.github.io/react/downloads.html
     new webpack.DefinePlugin(GLOBALS),
-
-    // Generate an external css file with a hash in the filename
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
-
-    // Generate HTML file that contains references to generated bundles. See here for how this works: https://github.com/ampedandwired/html-webpack-plugin#basic-usage
     new HtmlWebpackPlugin({
       template: 'src/index.ejs',
-      favicon: 'src/favicon.ico',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -55,15 +50,12 @@ export default {
         minifyURLs: true,
       },
       inject: true,
-      // Note that you can add custom options here if you need to handle other custom logic in index.html
-      // To track JavaScript errors via TrackJS, sign up for a free trial at TrackJS.com and enter your token below.
-      trackJSToken: '',
     }),
   ],
   module: {
     rules: [
       {
-        test: /\.js?x$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
@@ -127,6 +119,10 @@ export default {
             },
           },
         ],
+      },
+      {
+        test: /\.(yaml|yml)$/,
+        use: 'js-yaml-loader',
       },
       {
         test: /(\.css|\.scss|\.sass)$/,

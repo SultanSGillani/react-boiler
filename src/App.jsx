@@ -7,7 +7,6 @@ import Counter from './containers/Counter/Loadable';
 import About from './containers/About/Loadable';
 
 import store from './store';
-import './App.css';
 import styled from 'styled-components';
 
 const Layout = styled.div`
@@ -19,11 +18,11 @@ const App = () => (
   <Provider store={store}>
     <BrowserRouter>
       <Layout>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={Counter} />
-        <Route path="/about" component={About} />
-      </Switch>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Counter} />
+          <Route path="/about" component={About} />
+        </Switch>
       </Layout>
     </BrowserRouter>
     <GlobalStyle />

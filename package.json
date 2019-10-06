@@ -8,7 +8,8 @@
   "license": "ISC",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --mode development --config config/webpack.config.dev.babel.js --hot --progress --color --port 3000"
+    "dev": "webpack-dev-server --mode development --config config/webpack.config.dev.babel.js --hot --progress --color --port 3000",
+    "build": "webpack --mode production --config config/webpack.config.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout"
   },
   "dependencies": {
     "prop-types": "15.7.2",
