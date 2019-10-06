@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../cra-redux-saga/.idea/cra-redux-saga.iml" filepath="$PROJECT_DIR$/../cra-redux-saga/.idea/cra-redux-saga.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../react-boilerplate/.idea/react-boilerplate.iml" filepath="$PROJECT_DIR$/../react-boilerplate/.idea/react-boilerplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../react-kit/.idea/react-kit.iml" filepath="$PROJECT_DIR$/../react-kit/.idea/react-kit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/react-boiler.iml" filepath="$PROJECT_DIR$/.idea/react-boiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../resume/.idea/resume.iml" filepath="$PROJECT_DIR$/../resume/.idea/resume.iml" />
+    </modules>
+  </component>
+</project>
