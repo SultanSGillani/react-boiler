@@ -19,10 +19,8 @@ const App = () => (
     <BrowserRouter>
       <Layout>
         <Navbar />
-        <Switch>
-          <Route exact path="/" component={Counter} />
-          <Route path="/about" component={About} />
-        </Switch>
+        <Route exact path="/" component={Counter} />
+        <Route exact path="/about" component={About} />
       </Layout>
     </BrowserRouter>
     <GlobalStyle />

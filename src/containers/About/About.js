@@ -5,8 +5,7 @@ const About = () => (
     <h2>About Page</h2>
     <p>This is a sample counter app</p>
     <p>
-      Check the
-      <a href="https://github.com/SultanSGillani/react-boiler">repository here</a>
+      Check the <a href="https://github.com/SultanSGillani/react-boiler">repository here</a>
     </p>
   </div>
 );
