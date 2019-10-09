@@ -31,9 +31,7 @@ const Counter = (props) => {
     <Container>
       <h1>{total}</h1>
       <Button label="Increase" onClick={() => counterIncrease(val)} />
-      Increase
       <Button label="Decrease" onClick={() => counterDecrease(val)} />
-      Decrease
       <Button label="Reset" onClick={counterReset} />
       <p>Input custom number to increase or decrease the total</p>
       <Input type="number" value={val} onChange={customValChange} min={0} />

@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0aeeac4-72f0-4083-b954-5ed14d6e1b10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-boiler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-boiler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/About/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Counter/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Counter/Counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/global-styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/counter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Counter/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/counter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Counter/sagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react-boilerplate/docs/general/introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/../react-boilerplate/docs/general/introduction.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react-boilerplate/docs/js/redux-saga.md" beforeDir="false" afterPath="$PROJECT_DIR$/../react-boilerplate/docs/js/redux-saga.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react-boilerplate/docs/testing/unit-testing.md" beforeDir="false" afterPath="$PROJECT_DIR$/../react-boilerplate/docs/testing/unit-testing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../react-boilerplate/internals/generators/container/saga.js.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/../react-boilerplate/internals/generators/container/saga.js.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/history.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +92,7 @@
       <workItem from="1570225537520" duration="11843000" />
       <workItem from="1570325986752" duration="11289000" />
       <workItem from="1570495385143" duration="411000" />
+      <workItem from="1570589350525" duration="2038000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,17 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import styled from 'styled-components';
+import { ConnectedRouter } from 'connected-react-router';
 import Navbar from './components/Navbar';
 import GlobalStyle from './global-styles';
 import Counter from './containers/Counter/Loadable';
 import About from './containers/About/Loadable';
+import history from './utils/history';
 
-import store from './store';
-import styled from 'styled-components';
+import configureStore from './store';
+
+const store = configureStore();
 
 const Layout = styled.div`
   display: inherit;
@@ -16,13 +20,13 @@ const Layout = styled.div`
 
 const App = () => (
   <Provider store={store}>
-    <BrowserRouter>
+    <ConnectedRouter history={history}>
       <Layout>
         <Navbar />
         <Route exact path="/" component={Counter} />
         <Route exact path="/about" component={About} />
       </Layout>
-    </BrowserRouter>
+    </ConnectedRouter>
     <GlobalStyle />
   </Provider>
 );
